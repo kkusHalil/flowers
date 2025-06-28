@@ -87,12 +87,12 @@ body {
 }
 
 .text {
-  position: absolute;
+  position: fixed; /* sabitlenmiş konum */
+  top: 30%; /* yukarıdan boşluk */
   left: 50%;
-  top: 70%; /* Sayfa yüksekliğinin biraz altına */
-  transform: translateX(-50%);
-  z-index: 10; /* Flower'ın üstünde */
-  font-family: "Pacifico" !important;
+  transform: translateX(-50%) translateY(-20px); /* ilk pozisyon yukarıda */
+  z-index: 1000;
+  font-family: "Pacifico", cursive;
   font-size: 25px;
   background: linear-gradient(
     90deg,
@@ -106,18 +106,18 @@ body {
   -webkit-text-fill-color: transparent;
   color: #333;
   opacity: 0;
-  animation: textFadeIn 2s ease-out forwards;
-  animation-delay: 3s; /* Flower açıldıktan sonra */
+  animation: textFadeFromTop 2s ease-out forwards;
+  animation-delay: 3s;
 }
 
-@keyframes textFadeIn {
+@keyframes textFadeFromTop {
   from {
     opacity: 0;
-    transform: translateX(-50%) translateY(20px); /* Hafif aşağıdan gelsin */
+    transform: translateX(-50%) translateY(-20px); /* yukardan başlasın */
   }
   to {
     opacity: 1;
-    transform: translateX(-50%) translateY(0);
+    transform: translateX(-50%) translateY(0); /* yerine otursun */
   }
 }
 

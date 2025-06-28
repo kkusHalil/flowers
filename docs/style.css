@@ -88,7 +88,7 @@ body {
 
 .text {
   position: fixed; /* sabitlenmiş konum */
-  top: 25%; /* yukarıdan boşluk */
+  top: 20%; /* yukarıdan boşluk */
   left: 50%;
   transform: translateX(-50%) translateY(-20px); /* ilk pozisyon yukarıda */
   z-index: 1000;

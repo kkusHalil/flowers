@@ -93,7 +93,7 @@ body {
   transform: translateX(-50%) translateY(-20px); /* ilk pozisyon yukarıda */
   z-index: 1000;
   font-family: "Pacifico", cursive;
-  font-size: 25px;
+  font-size: 45px;
   background: linear-gradient(
     90deg,
     #ff9a9e,

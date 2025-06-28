@@ -110,6 +110,30 @@ body {
   animation-delay: 3s; /* Flower açıldıktan sonra */
 }
 
+@media (max-width: 480px) {
+
+   body {
+    align-items: center; /* Esnek alt yerine ortala */
+    padding: 20px 0; /* Daha az padding */
+    overflow: auto;
+  }
+
+  .text {
+    top: 80%; /* Daha aşağıya çek */
+    font-size: 18px; /* Daha küçük yazı */
+  }
+
+  .flower {
+    bottom: 5vmin; /* Daha az aşağıda kalsın */
+    transform-origin: center bottom;
+    transform: scale(0.7) rotate(0deg); /* Daha küçük veya farklı açıda olabilir */
+  }
+
+  #container {
+    padding-bottom: 10vmin; /* Alt boşluk artırılabilir */
+  }
+}
+
 @keyframes textFadeIn {
   from {
     opacity: 0;
